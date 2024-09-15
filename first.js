@@ -4,7 +4,10 @@ function calculateTax(monthlyIncome,monthlyExpenses) {
         console.log("Invalid Input")
         return
     }
+    else{
     const profit = ( monthlyIncome - monthlyExpenses );
     const tax = ( profit * 0.2 );
     return tax ;
+    }
 }
+console.log(calculateTax(50000,10000));
