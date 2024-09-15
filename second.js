@@ -5,5 +5,9 @@ function letNotify( email){
         let domain = separate[1];
         return `${user} sends you an email using ${domain}`;
     }
+    else{
+        return "Invalid info"
+    }
 }
-console.log(letNotify("asrafaly7@gmail.com"))
+let info = "as12gmail.come"
+console.log(letNotify("info"));
