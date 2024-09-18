@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Listener</title>
 </head>
-<body>
-    <h1>Dome dome DOM Listener</h1>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum earum et numquam libero vitae dolores laudantium culpa ipsam, asperiores reiciendis cumque debitis similique voluptate atque, quam fuga. Voluptates, dolor fuga?</P>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam mollitia repudiandae, qui officia modi! Dolorum cumque iusto consequatur tempora omnis autem beatae blanditiis minus eum. Soluta quod rerum dolorum?</P>
-    <P id="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quaerat. Et quas voluptas hic quasi excepturi? Laboriosam hic corporis pariatur modi assumenda eveniet, architecto deserunt alias sed necessitatibus dignissimos consequatur!</P>
-    <textarea name="" id="text-area" cols="50" rows="5" placeholder="add your comment here"></textarea>
-    <button id="post-btn">Deploy</button>
+<body >
+    <div >
+        <h1>Dome dome DOM Listener</h1>
+        <div id="container">
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum earum et numquam libero vitae dolores laudantium culpa ipsam, asperiores reiciendis cumque debitis similique voluptate atque, quam fuga. Voluptates, dolor fuga?</P>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magnam mollitia repudiandae, qui officia modi! Dolorum cumque iusto consequatur tempora omnis autem beatae blanditiis minus eum. Soluta quod rerum dolorum?</P>
+            <P id="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quaerat. Et quas voluptas hic quasi excepturi? Laboriosam hic corporis pariatur modi assumenda eveniet, architecto deserunt alias sed necessitatibus dignissimos consequatur!</P>
+        </div>
+        <div>
+            <textarea name="" id="text-area" cols="50" rows="5" placeholder="add your comment here"></textarea>
+            <button id="post-btn">Deploy</button>
+        </div>
+    </div>
     <script>
         document.getElementById('post-btn').addEventListener("click",function() {
            const textArea = document.getElementById('text-area');
            const value = textArea.value;
-           const p =document.getElementById('paras');
-           p.innerText = value ;
+           const newElement =document.createElement('p')
+           newElement.innerText = value ;
            
-        p.appendChild(p);
+           container.appendChild(newElement);
+           textArea.value = " "
             
         })
     </script>
