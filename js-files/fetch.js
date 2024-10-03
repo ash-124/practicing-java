@@ -35,3 +35,12 @@ function loadToDo() {
 function getData(data) {
   console.log(data);
 }
+
+// let's write this fetch into a function
+
+ async function loader (){
+  
+  const res = await fetch('');
+  const data = await res.json() ;
+  console.log(data);
+}
