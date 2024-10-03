@@ -15,7 +15,7 @@ loader();
 // 2.inside the function return the Promise method as a function.
 // 3. inside Promise function declare a arrow function then set the parameter of the to two callback function :- resolve and reject .
 // then gave the conditions inside the arrow function and call the call back functions.
-// 4. don't ever forgot to call the first created function.
+// 4. don't ever forgot to call the first created function.optional
 
 // promise with random loader
 const randomLoader = () => {

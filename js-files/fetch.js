@@ -44,3 +44,9 @@ function getData(data) {
   const data = await res.json() ;
   console.log(data);
 }
+// convert it into arrow function
+const taskLoader = async() => {
+  const res = await fetch('');
+  const data = await res.json();
+  console.log(data);
+}
